@@ -1,0 +1,206 @@
+%!Adobe-FontList 1.18
+%Locale:0x804
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:SourceHanSansCN-Bold
+FamilyName:Source Han Sans CN
+StyleName:Bold
+FullName:Source Han Sans CN Bold Bold
+MenuName:思源黑体 CN Bold
+StyleBits:2
+FamilyNameNative:思源黑体 CN
+StyleNameNative:Bold
+FullNameNative:思源黑体 CN Bold
+WritingScript:SimplifiedChinese
+OutlineFileName:C:\Users\mpand\Desktop\page\Font\SourceHanSansCN-Bold.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+FileLength:8608184
+FileModTime:1403577270
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Source Han Sans CN Bold Bold
+NameArray:0,Win,1,Source Han Sans CN Bold
+NameArray:0,Win,16,Source Han Sans CN
+NameArray:25,Win,1,思源黑体 CN Bold
+NameArray:25,Win,16,思源黑体 CN
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:SourceHanSansCN-ExtraLight
+FamilyName:Source Han Sans CN
+StyleName:ExtraLight
+FullName:Source Han Sans CN ExtraLight
+MenuName:思源黑体 CN ExtraLight
+StyleBits:0
+FamilyNameNative:思源黑体 CN
+StyleNameNative:ExtraLight
+FullNameNative:思源黑体 CN ExtraLight
+WritingScript:SimplifiedChinese
+OutlineFileName:C:\Users\mpand\Desktop\page\Font\SourceHanSansCN-ExtraLight.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+FileLength:7704352
+FileModTime:1403577270
+WeightClass:100
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Source Han Sans CN ExtraLight
+NameArray:0,Win,1,Source Han Sans CN ExtraLight
+NameArray:0,Win,16,Source Han Sans CN
+NameArray:25,Win,1,思源黑体 CN ExtraLight
+NameArray:25,Win,16,思源黑体 CN
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:SourceHanSansCN-Heavy
+FamilyName:Source Han Sans CN
+StyleName:Heavy
+FullName:Source Han Sans CN Heavy Bold
+MenuName:思源黑体 CN Heavy
+StyleBits:2
+FamilyNameNative:思源黑体 CN
+StyleNameNative:Heavy
+FullNameNative:思源黑体 CN Heavy
+WritingScript:SimplifiedChinese
+OutlineFileName:C:\Users\mpand\Desktop\page\Font\SourceHanSansCN-Heavy.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+FileLength:8785564
+FileModTime:1403577272
+WeightClass:900
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Source Han Sans CN Heavy Bold
+NameArray:0,Win,1,Source Han Sans CN Heavy
+NameArray:0,Win,16,Source Han Sans CN
+NameArray:25,Win,1,思源黑体 CN Heavy
+NameArray:25,Win,16,思源黑体 CN
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:SourceHanSansCN-Light
+FamilyName:Source Han Sans CN
+StyleName:Light
+FullName:Source Han Sans CN Light
+MenuName:思源黑体 CN Light
+StyleBits:0
+FamilyNameNative:思源黑体 CN
+StyleNameNative:Light
+FullNameNative:思源黑体 CN Light
+WritingScript:SimplifiedChinese
+OutlineFileName:C:\Users\mpand\Desktop\page\Font\SourceHanSansCN-Light.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+FileLength:8297476
+FileModTime:1403577284
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Source Han Sans CN Light
+NameArray:0,Win,1,Source Han Sans CN Light
+NameArray:0,Win,16,Source Han Sans CN
+NameArray:25,Win,1,思源黑体 CN Light
+NameArray:25,Win,16,思源黑体 CN
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:SourceHanSansCN-Medium
+FamilyName:Source Han Sans CN
+StyleName:Medium
+FullName:Source Han Sans CN Medium
+MenuName:思源黑体 CN Medium
+StyleBits:0
+FamilyNameNative:思源黑体 CN
+StyleNameNative:Medium
+FullNameNative:思源黑体 CN Medium
+WritingScript:SimplifiedChinese
+OutlineFileName:C:\Users\mpand\Desktop\page\Font\SourceHanSansCN-Medium.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+FileLength:8390148
+FileModTime:1403577282
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Source Han Sans CN Medium
+NameArray:0,Win,1,Source Han Sans CN Medium
+NameArray:0,Win,16,Source Han Sans CN
+NameArray:25,Win,1,思源黑体 CN Medium
+NameArray:25,Win,16,思源黑体 CN
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:SourceHanSansCN-Normal
+FamilyName:Source Han Sans CN
+StyleName:Normal
+FullName:Source Han Sans CN Normal
+MenuName:思源黑体 CN Normal
+StyleBits:0
+FamilyNameNative:思源黑体 CN
+StyleNameNative:Normal
+FullNameNative:思源黑体 CN Normal
+WritingScript:SimplifiedChinese
+OutlineFileName:C:\Users\mpand\Desktop\page\Font\SourceHanSansCN-Normal.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+FileLength:8344108
+FileModTime:1403577270
+WeightClass:350
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Source Han Sans CN Normal
+NameArray:0,Win,1,Source Han Sans CN Normal
+NameArray:0,Win,16,Source Han Sans CN
+NameArray:25,Win,1,思源黑体 CN Normal
+NameArray:25,Win,16,思源黑体 CN
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:SourceHanSansCN-Regular
+FamilyName:Source Han Sans CN
+StyleName:Regular
+FullName:Source Han Sans CN Regular
+MenuName:思源黑体 CN Regular
+StyleBits:0
+FamilyNameNative:思源黑体 CN
+StyleNameNative:Regular
+FullNameNative:思源黑体 CN Regular
+WritingScript:SimplifiedChinese
+OutlineFileName:C:\Users\mpand\Desktop\page\Font\SourceHanSansCN-Regular.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+FileLength:8364840
+FileModTime:1403577282
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Source Han Sans CN Regular
+NameArray:0,Win,1,Source Han Sans CN Regular
+NameArray:0,Win,16,Source Han Sans CN
+NameArray:25,Win,1,思源黑体 CN Regular
+NameArray:25,Win,16,思源黑体 CN
+%EndFont
+
