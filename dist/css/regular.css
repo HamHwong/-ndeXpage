@@ -1,0 +1,140 @@
+@charset "UTF-8";
+html {
+  font-size: 625%;
+}
+.drakbgc {
+  color: #fff;
+  background-color: #101c29;
+}
+.lightbgc {
+  color: #595757;
+  background-color: #e9e9e9;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.grayimgbg {
+  filter: grayscale(100%);
+  background-image: url('../static/images/p.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.grayimgbg > .vignetting {
+  width: 100%;
+  height: 240px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/***
+字体
+***/
+@font-face {
+  font-family: "Heavy";
+  src: url('/static/fonts/SourceHanSansCN-Heavy.ttf') format('truetype'), url("/static/fonts/SourceHanSansCN-Heavy.woff2") format("woff2"), url("/static/fonts/SourceHanSansCN-Heavy.woff") format("woff"), url("/static/fonts/SourceHanSansCN-Heavy.ttf") format("truetype"), url("/static/fonts/SourceHanSansCN-Heavy.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Light";
+  src: url('/static/fonts/SourceHanSansCN-Light.ttf') format('truetype'), url("/static/fonts/SourceHanSansCN-Light.woff2") format("woff2"), url("/static/fonts/SourceHanSansCN-Light.woff") format("woff"), url("/static/fonts/SourceHanSansCN-Light.ttf") format("truetype"), url("/static/fonts/SourceHanSansCN-Light.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Regular";
+  src: url('/static/fonts/SourceHanSansCN-Regular.ttf') format('truetype'), url("/static/fonts/SourceHanSansCN-Regular.woff2") format("woff2"), url("/static/fonts/SourceHanSansCN-Regular.woff") format("woff"), url("/static/fonts/SourceHanSansCN-Regular.ttf") format("truetype"), url("/static/fonts/SourceHanSansCN-Regular.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Normal";
+  src: url('/static/fonts/SourceHanSansCN-Normal.ttf') format('truetype'), url("/static/fonts/SourceHanSansCN-Normal.woff2") format("woff2"), url("/static/fonts/SourceHanSansCN-Normal.woff") format("woff"), url("/static/fonts/SourceHanSansCN-Normal.ttf") format("truetype"), url("/static/fonts/SourceHanSansCN-Normal.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Medium";
+  src: url('/static/fonts/SourceHanSansCN-Medium.ttf') format('truetype'), url("/static/fonts/SourceHanSansCN-Medium.woff2") format("woff2"), url("/static/fonts/SourceHanSansCN-Medium.woff") format("woff"), url("/static/fonts/SourceHanSansCN-Medium.ttf") format("truetype"), url("/static/fonts/SourceHanSansCN-Medium.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bold";
+  src: url('/static/fonts/SourceHanSansCN-Bold.ttf') format('truetype'), url("/static/fonts/SourceHanSansCN-Bold.woff2") format("woff2"), url("/static/fonts/SourceHanSansCN-Bold.woff") format("woff"), url("/static/fonts/SourceHanSansCN-Bold.ttf") format("truetype"), url("/static/fonts/SourceHanSansCN-Bold.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ExtraLight";
+  src: url('/static/fonts/SourceHanSansCN-ExtraLight.ttf') format('truetype'), url("/static/fonts/SourceHanSansCN-ExtraLight.woff2") format("woff2"), url("/static/fonts/SourceHanSansCN-ExtraLight.woff") format("woff"), url("/static/fonts/SourceHanSansCN-ExtraLight.ttf") format("truetype"), url("/static/fonts/SourceHanSansCN-ExtraLight.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/***
+w - width
+h - heitht
+p - padding
+  pt - padding-top
+  pr - padding-right
+  pb - padding-bottom
+  pl - padding-left
+m - marggin
+  mt
+  mr
+  mb
+  ml
+(empty) - px
+p - %
+r - rem
+***/
+.w100 {
+  width: 100%;
+}
+.w10 {
+  width: 10%;
+}
+.minh10p {
+  min-height: .1rem;
+}
+.minh60p {
+  min-height: .6rem;
+}
+.h10r {
+  height: .1rem;
+}
+.h10 {
+  height: .1rem;
+}
+.p10p {
+  padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+}
+.m10r {
+  margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+}
+.mt10r {
+  margin: 1rem 0 0 0;
+}
+.mt23p {
+  margin: 0.23rem 0 0 0;
+}
+.row60 {
+  min-height: .6rem;
+}
+.row100 {
+  min-height: 1rem;
+}
+.row120 {
+  min-height: 1.2rem;
+}
+.row240 {
+  min-height: 2.4rem;
+}
+.row360 {
+  min-height: 3.6rem;
+}
+.row480 {
+  min-height: 4.8rem;
+}
+.row600 {
+  min-height: 6rem;
+}

@@ -6,12 +6,13 @@ const
     ejs = require('gulp-ejs'),
     connect = require('gulp-connect'),
     livereload = require('gulp-livereload'),
-    concat = requrie('gulp-concat'),
+    concat = require('gulp-concat'),
+    // fontSpider = require('gulp-font-spider'),
     path = require('./config/path.config.js')
 
 //HTML Tasks:
 //1.html - 将ejs转换为html
-gulp.task('html', () => {
+gulp.task('html', ['componentsless2css'], () => {
     gulp.src(path.src.ejs + '**/*.ejs')
         .pipe(ejs({
             path: path
@@ -35,17 +36,31 @@ gulp.task('htmlReload', () => {
 //CSS Tasks:
 //less - 将less轉換爲css
 gulp.task('less', () => {
-    gulp.src(path.src.less + '**/*.less')
+    gulp.src([path.src.less + '**/*.less', '!' + path.src.less + '**/*-func.less'])
         .pipe(less())
-        .pipe(gulp.dest(path.dist.less))
+        .pipe(gulp.dest(path.dist.css))
+        .pipe(livereload())
 })
-gulp.task('components', () => {
+gulp.task('componentsless2css', () => {
     gulp.src(path.src.components + '**/*.less')
         .pipe(less())
         .pipe(concat('components.css'))
         .pipe(gulp.dest(path.src.css))
 })
-gulp.task('cssWatcher')
+gulp.task('lessWatcher', () => {
+    livereload.listen()
+    gulp.watch([path.src.components + '**/*.less'], ['componentsless2css', 'htmlReload'])
+    gulp.watch([path.src.less + '**/*.less'], ['less', 'htmlReload'])
+})
+
+gulp.task('srcCss2distCss', () => {
+    gulp.src(path.src.css + '**/*.css')
+        .pipe(gulp.dest(path.dist.css))
+})
+gulp.task('cssWatcher', () => {
+    livereload.listen()
+    gulp.watch([path.src.css + '**/*.css'], ['srcCss2distCss', 'htmlReload'])
+})
 //Server Tasks:
 gulp.task('webserver', () => {
     connect.server({
@@ -61,4 +76,4 @@ gulp.task('declare', () => {
 })
 
 //Default Tasks
-gulp.task('default', ['html', 'webserver', 'htmlWatcher'])
+gulp.task('default', ['html', 'webserver', 'lessWatcher', 'cssWatcher', 'htmlWatcher'])

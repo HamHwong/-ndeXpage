@@ -12,7 +12,7 @@ module.exports = {
         less: srcroot + 'less/',
         js: srcroot + 'js/',
         ejs: rt + 'src/ejs/',
-        components: rt + 'src/ejs/components',
+        components: rt + 'src/ejs/components/',
     },
     dist: {
         root: distroot,

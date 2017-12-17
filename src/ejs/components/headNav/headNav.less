@@ -1,0 +1,74 @@
+@import url(./src/less/less-func);
+@import url(./src/less/regular);
+// Logo
+a.logo {
+    font: 0.175rem Bold;
+    letter-spacing: .05rem;
+    >img {
+        height: .38rem;
+        width: .49rem;
+    }
+    >span {
+        margin-left: .2rem;
+    }
+} // End Logo
+
+/***
+Bootstrap 自定义
+***/
+
+.nav .open>a,
+.nav .open>a:link,
+.nav .open>a:visited,
+.nav .open>a:focus,
+.nav .open>a:hover,
+.nav .open>a:active,
+.navbar-nav>li>a:hover {
+    background-color: transparent;
+} //取消nav上link的背景色
+@header-link-margin-right: .29rem;
+.navbar-nav>li>a {
+    font-size: 14px;
+    @media (min-width: 768px) {
+        .func-padding(0, @header-link-margin-right/2)
+    }
+}
+
+.navbar-nav>li:first-child>a {
+    @media (min-width: 768px) {
+        .func-padding(0, @header-link-margin-right/2, 0, 0)
+    }
+}
+
+.navbar-nav>li>a:link {}
+
+.navbar-nav>li>a:visited {
+    color: #fff;
+}
+
+.navbar-nav>li>a:hover {
+    color: #fff;
+    @media (min-width: 768px) {
+        text-decoration: underline;
+    }
+}
+
+.navbar-nav>li>a:active {}
+
+
+/***
+End Bootstrap自定义
+***/
+
+.navbar-elitesource {
+    @media (min-width: 768px) {
+        .minh10p
+    }
+    .drakbgc;
+    .navbar-toggle {
+        border-color: #333;
+        .icon-bar {
+            background-color: #fff;
+        }
+    }
+}
