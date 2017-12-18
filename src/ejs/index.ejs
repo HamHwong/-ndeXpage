@@ -10,31 +10,74 @@
 </head>
 
 <body>
-
     <!-- Header -->
     <%-include(path.src.components+'/headNav/headNav') %>
         <!-- End Header -->
+
         <!-- Carousel -->
         <%-include(path.src.components+'/carousel/carousel') %>
             <!-- End Carousel -->
+
+            <!-- LinkNav -->
             <div class="row drakbgc row60">
                 <div class="container">
                 </div>
             </div>
+            <!-- End LinkNav -->
 
+            <!-- Business Introduce & Anchor -->
             <div class="row lightbgc row480">
                 <div class="container">
+                    <!-- 介紹 -->
+                    <div class="businessIntro">
+                        <h2>BUSINESS</h2>
+                        <span>HERE IS BUSINESS INTRODUCTION ABOUT OUR COMPANY</span>
+
+                    </div>
+                    <!-- End 介紹 -->
+                    <!-- 業務導航 -->
+                    <div class="cycle_container col-xs-12 col-sm-6 col-md-3" onclick="javascript:location.href='#'">
+                        <div class="cycle">
+                            <img src="" alt="">
+                            <span class="cycle_title">TITLETITLETIE</span>
+                        </div>
+                    </div>
+                    <div class="cycle_container col-xs-12 col-sm-6 col-md-3" onclick="javascript:location.href='#'">
+                        <div class="cycle">
+                            <img src="" alt="">
+                            <span class="cycle_title">TITLE</span>
+                        </div>
+                    </div>
+                    <div class="cycle_container col-xs-12 col-sm-6 col-md-3" onclick="javascript:location.href='#'">
+                        <div class="cycle">
+                            <img src="" alt="">
+                            <span class="cycle_title">TITLE</span>
+                        </div>
+                    </div>
+                    <div class="cycle_container col-xs-12 col-sm-6 col-md-3" onclick="javascript:location.href='#'">
+                        <div class="cycle">
+                            <img src="" alt="">
+                            <span class="cycle_title">TITLE</span>
+                        </div>
+                    </div>
+                    <!--End 業務導航 -->
                 </div>
             </div>
+            <!-- End Business Introduce & Anchor -->
+
             <!-- ImageBar -->
-            <div class="row row240 grayimgbg">
+            <div class="row row240 grayimgbg imagebar1">
                 <div class="vignetting"></div>
                 <div class="container">
-
+                    <span>构建赢得未来的数字化业务 >>..</span>
                 </div>
             </div>
             <!-- End ImageBar -->
-
+            <!-- Business Detail -->
+            <div class="row row600 lightbgc">
+                <%-include(path.src.components+'/businessDetail/businessDetail') %>
+            </div>
+            <!-- End Business Detail -->
 </body>
 <link rel="stylesheet" href="/css/regular.css">
 <link rel="stylesheet" href="/css/components.css">

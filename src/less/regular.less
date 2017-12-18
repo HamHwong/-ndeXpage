@@ -1,44 +1,13 @@
 @charset "UTF-8";
 @import url(less-func);
-html {
-    font-size: 625%; //1rem = 100px
-}
-
-.drakbgc {
-    color: #fff;
-    background-color: #101c29;
-}
-
-.lightbgc {
-    color: #595757;
-    background-color: #e9e9e9;
-}
-
-.row {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.grayimgbg {
-    filter: grayscale(100%);
-    background-image: url('../static/images/p.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    >.vignetting {
-        width: 100%;
-        height:240px;
-        background-color: rgba(0, 0, 0, 0.7);
-    }
-}
-
 
 /***
 字体
 ***/
 
 @font-face {
-    font-family: "Heavy";
-    src: url('/static/fonts/SourceHanSansCN-Heavy.ttf') format('truetype'), url("/static/fonts/SourceHanSansCN-Heavy.woff2") format("woff2"), url("/static/fonts/SourceHanSansCN-Heavy.woff") format("woff"), url("/static/fonts/SourceHanSansCN-Heavy.ttf") format("truetype"), url("/static/fonts/SourceHanSansCN-Heavy.eot") format("embedded-opentype");
+    font-family: "ExtraLight";
+    src: url('/static/fonts/SourceHanSansCN-ExtraLight.ttf') format('truetype'), url("/static/fonts/SourceHanSansCN-ExtraLight.woff2") format("woff2"), url("/static/fonts/SourceHanSansCN-ExtraLight.woff") format("woff"), url("/static/fonts/SourceHanSansCN-ExtraLight.ttf") format("truetype"), url("/static/fonts/SourceHanSansCN-ExtraLight.eot") format("embedded-opentype");
     font-weight: normal;
     font-style: normal;
 }
@@ -79,10 +48,137 @@ html {
 }
 
 @font-face {
-    font-family: "ExtraLight";
-    src: url('/static/fonts/SourceHanSansCN-ExtraLight.ttf') format('truetype'), url("/static/fonts/SourceHanSansCN-ExtraLight.woff2") format("woff2"), url("/static/fonts/SourceHanSansCN-ExtraLight.woff") format("woff"), url("/static/fonts/SourceHanSansCN-ExtraLight.ttf") format("truetype"), url("/static/fonts/SourceHanSansCN-ExtraLight.eot") format("embedded-opentype");
+    font-family: "Heavy";
+    src: url('/static/fonts/SourceHanSansCN-Heavy.ttf') format('truetype'), url("/static/fonts/SourceHanSansCN-Heavy.woff2") format("woff2"), url("/static/fonts/SourceHanSansCN-Heavy.woff") format("woff"), url("/static/fonts/SourceHanSansCN-Heavy.ttf") format("truetype"), url("/static/fonts/SourceHanSansCN-Heavy.eot") format("embedded-opentype");
     font-weight: normal;
     font-style: normal;
+}
+
+//End 字體
+//Title 標題
+h1 {
+    font-size: .56rem;
+    font-family: Bold;
+}
+
+h2 {
+    font-size: .48rem;
+    font-family: Media;
+}
+
+h3 {
+    font-size: .18rem;
+    font-family: Regular;
+}
+
+h4 {
+    font-size: .16rem;
+    font-family: Regular;
+}
+
+h5 {
+    font-size: .16rem;
+    font-family: Light;
+}
+
+h6 {
+    font-size: .16rem;
+    font-family: ExtraLight;
+}
+
+//End Title
+* {
+    transition: all .5s ease;
+}
+
+html {
+    font-size: 625%; //1rem = 100px
+}
+
+body {
+    font-family: Regular;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #1681d8;
+}
+
+
+/***
+網格Grid
+***/
+
+.gridify {
+    display: grid;
+}
+
+
+/***
+End Grid
+***/
+
+
+/***
+Flex盒子
+***/
+
+.flexify {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/***
+End Flex
+***/
+
+.drakbgc {
+    color: #fff;
+    background-color: #101c29;
+}
+
+.lightbgc {
+    color: #595757;
+    background-color: #e9e9e9;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.grayimgbg {
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    >.vignetting {
+        position: absolute;
+        width: 100%;
+        height: 2.4rem;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    >.container{
+        position: relative;
+        font-family: ExtraLight;
+        color: #fff;
+        height: 100%;
+        @media (min-width:768px){
+            font-size: 4em;
+        }
+        @media (max-width:768px){
+            font-size: 2em;
+        }
+        >span{
+            display: block;
+            line-height: 2.4rem;
+        }
+    }
 }
 
 

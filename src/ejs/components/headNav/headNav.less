@@ -11,21 +11,41 @@ a.logo {
     >span {
         margin-left: .2rem;
     }
+}
+
+a.logo:link,
+a.logo:visited,
+a.logo:hover,
+a.logo:active {
+    text-decoration: none;
 } // End Logo
 
 /***
 Bootstrap 自定义
 ***/
 
-.nav .open>a,
-.nav .open>a:link,
-.nav .open>a:visited,
-.nav .open>a:focus,
-.nav .open>a:hover,
-.nav .open>a:active,
-.navbar-nav>li>a:hover {
-    background-color: transparent;
+a,
+li a:link,
+li:link,
+a:visited,
+li:visited,
+a:hover,
+li:hover,
+a:active,
+li:active,
+a:focus ,
+li:focus {
+    background-color: transparent !important;
 } //取消nav上link的背景色
+// .nav .open>a,
+// .nav .open>a:link,
+// .nav .open>a:visited,
+// .nav .open>a:focus,
+// .nav .open>a:hover,
+// .nav .open>a:active,
+// .navbar-nav>li>a:hover {
+//     background-color: transparent;
+// } //取消nav上link的背景色
 @header-link-margin-right: .29rem;
 .navbar-nav>li>a {
     font-size: 14px;
