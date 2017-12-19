@@ -1,3 +1,48 @@
-.bizDetail{
-    
+.bizDetail {
+    .bizPic {
+        // padding-left: 0;
+        img.img-responsive {
+            //修改bs默认
+            // @media(min-width: 768px) {
+            // }
+            @media(max-width: 768px) {
+                max-width: 70%;
+                margin: 0 auto;
+            }
+        }
+    }
+    .container {
+        padding: .2rem;
+        border-bottom: solid 1.2px #cccccc;
+    }
+
+    .bizContent {
+        @media(max-width: 768px) {
+            margin-top: .4rem;
+        }
+        .bizTitle{
+            h3{
+                // font-family: Light;
+                margin-top:0;
+            }
+        }
+        .bizInfo {
+            word-break: break-all;
+            span {
+                text-align: justify;
+                letter-spacing: .01rem;
+            }
+        }
+        .bizLink {
+            position: relative;
+            bottom: 0;
+            font-size: .16rem;
+            margin-top: .4rem;
+        }
+    }
+}
+.bizDetail:last-child{
+    .container:last-child{
+        border-bottom:none;
+    }
 }

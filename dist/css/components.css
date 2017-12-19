@@ -6,26 +6,39 @@
   text-indent: 2rem;
 }
 
-.cycle_container {
-  cursor: pointer;
+@media (max-width: 768px) {
+  .bizDetail .bizPic img.img-responsive {
+    max-width: 70%;
+    margin: 0 auto;
+  }
 }
-.cycle {
-  width: 2.4rem;
-  height: 2.4rem;
-  border-radius: 50%;
-  margin: .2rem auto;
-  background-color: #fdfdfd;
-  text-align: center;
-  overflow: hidden;
-  box-shadow: 0 0 .3rem 0 #dcdcdc;
+.bizDetail .container {
+  padding: .2rem;
+  border-bottom: solid 1.2px #cccccc;
 }
-.cycle_title {
-  font-family: Bold;
+@media (max-width: 768px) {
+  .bizDetail .bizContent {
+    margin-top: .4rem;
+  }
+}
+.bizDetail .bizContent .bizTitle h3 {
+  margin-top: 0;
+}
+.bizDetail .bizContent .bizInfo {
+  word-break: break-all;
+}
+.bizDetail .bizContent .bizInfo span {
+  text-align: justify;
+  letter-spacing: .01rem;
+}
+.bizDetail .bizContent .bizLink {
   position: relative;
-  top: .2rem;
-  letter-spacing: -0.01rem;
-  color: #1681d8;
-  font-size: 1.4em;
+  bottom: 0;
+  font-size: .16rem;
+  margin-top: .4rem;
+}
+.bizDetail:last-child .container:last-child {
+  border-bottom: none;
 }
 
 @charset "UTF-8";
@@ -83,11 +96,11 @@ h2 {
   font-family: Media;
 }
 h3 {
-  font-size: .18rem;
+  font-size: .30rem;
   font-family: Regular;
 }
 h4 {
-  font-size: .16rem;
+  font-size: .18rem;
   font-family: Regular;
 }
 h5 {
@@ -134,13 +147,17 @@ Flex盒子
 /***
 End Flex
 ***/
-.drakbgc {
+.darkbgc {
   color: #fff;
   background-color: #101c29;
 }
-.lightbgc {
+.graybgc {
   color: #595757;
   background-color: #e9e9e9;
+}
+.bluebgc {
+  color: #fff;
+  background-color: #1995fa;
 }
 .row {
   margin-left: 0px;
@@ -151,12 +168,6 @@ End Flex
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-}
-.grayimgbg > .vignetting {
-  position: absolute;
-  width: 100%;
-  height: 2.4rem;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 .grayimgbg > .container {
   position: relative;
@@ -177,6 +188,11 @@ End Flex
 .grayimgbg > .container > span {
   display: block;
   line-height: 2.4rem;
+}
+.vignetting {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /***
 w - width
@@ -247,20 +263,59 @@ r - rem
   min-height: 6rem;
 }
 .carousel_es {
-  min-height: 73px;
   margin-top: 73px;
+  min-height: 73px;
 }
 @media (min-width: 768px) {
   .carousel_es {
     margin: 1rem 0 0 0;
   }
 }
-.carousel_es > .carousel-inner img {
-  max-height: 3.6rem;
+.carousel_es .carousel-inner {
+  max-height: 8rem;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .carousel_es .carousel-inner {
+    max-height: 36rem;
+  }
+}
+.carousel_es .carousel-inner .vignetting {
+  height: 100%;
+}
+.carousel_es .carousel-caption h1 {
+  font-family: Regular;
+  font-size: .4rem;
+  text-align: left;
+}
+
+.cycle_container {
+  cursor: pointer;
+}
+.cycle {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  margin: .2rem auto;
+  background-color: #fdfdfd;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 .3rem 0 #dcdcdc;
+}
+.cycle_title {
+  font-family: Bold;
+  position: relative;
+  top: .2rem;
+  letter-spacing: -0.01rem;
+  color: #1681d8;
+  font-size: 1.4em;
 }
 
 .imagebar1 {
   background-image: url('../static/images/p.jpg');
+}
+.imagebar1 .vignetting {
+  height: 2.4rem;
 }
 
 @charset "UTF-8";
@@ -318,11 +373,11 @@ h2 {
   font-family: Media;
 }
 h3 {
-  font-size: .18rem;
+  font-size: .30rem;
   font-family: Regular;
 }
 h4 {
-  font-size: .16rem;
+  font-size: .18rem;
   font-family: Regular;
 }
 h5 {
@@ -369,13 +424,17 @@ Flex盒子
 /***
 End Flex
 ***/
-.drakbgc {
+.darkbgc {
   color: #fff;
   background-color: #101c29;
 }
-.lightbgc {
+.graybgc {
   color: #595757;
   background-color: #e9e9e9;
+}
+.bluebgc {
+  color: #fff;
+  background-color: #1995fa;
 }
 .row {
   margin-left: 0px;
@@ -386,12 +445,6 @@ End Flex
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-}
-.grayimgbg > .vignetting {
-  position: absolute;
-  width: 100%;
-  height: 2.4rem;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 .grayimgbg > .container {
   position: relative;
@@ -412,6 +465,11 @@ End Flex
 .grayimgbg > .container > span {
   display: block;
   line-height: 2.4rem;
+}
+.vignetting {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /***
 w - width
@@ -490,7 +548,7 @@ a.logo > img {
   width: .49rem;
 }
 a.logo > span {
-  margin-left: .2rem;
+  margin-left: .1rem;
 }
 a.logo:link,
 a.logo:visited,

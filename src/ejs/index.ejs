@@ -12,27 +12,26 @@
 <body>
     <!-- Header -->
     <%-include(path.src.components+'/headNav/headNav') %>
-        <!-- End Header -->
+    <!-- End Header -->
 
         <!-- Carousel -->
         <%-include(path.src.components+'/carousel/carousel') %>
             <!-- End Carousel -->
 
             <!-- LinkNav -->
-            <div class="row drakbgc row60">
+            <div class="row darkbgc row60">
                 <div class="container">
                 </div>
             </div>
             <!-- End LinkNav -->
 
             <!-- Business Introduce & Anchor -->
-            <div class="row lightbgc row480">
+            <div class="row graybgc row360">
                 <div class="container">
                     <!-- 介紹 -->
                     <div class="businessIntro">
                         <h2>BUSINESS</h2>
                         <span>HERE IS BUSINESS INTRODUCTION ABOUT OUR COMPANY</span>
-
                     </div>
                     <!-- End 介紹 -->
                     <!-- 業務導航 -->
@@ -74,10 +73,15 @@
             </div>
             <!-- End ImageBar -->
             <!-- Business Detail -->
-            <div class="row row600 lightbgc">
+            <div class="row row600 graybgc">
                 <%-include(path.src.components+'/businessDetail/businessDetail') %>
             </div>
             <!-- End Business Detail -->
+            <!-- Bar -->
+            <div class="row480 bluebgc">
+                    <%-include(path.src.components+'/bigTopic/bigTopic') %>
+            </div>
+            <!-- End Bar -->
 </body>
 <link rel="stylesheet" href="/css/regular.css">
 <link rel="stylesheet" href="/css/components.css">

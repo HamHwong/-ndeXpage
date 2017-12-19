@@ -3,13 +3,32 @@
 .carousel_es {
     margin-top: 73px;
     min-height: 73px;
-    margin-top: 73px;
     @media (min-width: 768px) {
         .mt10r
     }
-    >.carousel-inner {
-        img {
-            max-height: 3.6rem;
+    .carousel-inner {
+        max-height: 8rem;
+        @media (min-width: 768px) {
+            max-height: 36rem;
         }
-    }
+        overflow: hidden;
+        .vignetting {
+            height: 100%;
+        }
+        // img {
+        //     width: 100%;
+        // }
+    } 
+    //Carousel字体排版
+    .carousel-caption {
+        h1 {
+            font-family: Regular;
+            font-size: .4rem;
+            text-align: left;
+        }
+        p {
+            a {}
+        }
+    } 
+    //End Carousel字体排版
 }
