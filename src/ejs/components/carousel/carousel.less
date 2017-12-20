@@ -5,30 +5,62 @@
     min-height: 73px;
     @media (min-width: 768px) {
         .mt10r
+    } //輪轉圖操作點
+    .carousel-indicators {
+        li {
+            width: 7px;
+            height: 7px;
+            background-color: #fff;
+        }
+        .active {
+            width: 10px;
+            height: 10px;
+        }
+    } //End 輪轉圖操作點
+    //重置左右操作
+    .carousel-control {
+        color:#fff;
     }
+    //End 重置左右操作
     .carousel-inner {
         max-height: 8rem;
-        @media (min-width: 768px) {
-            max-height: 36rem;
-        }
         overflow: hidden;
         .vignetting {
             height: 100%;
         }
-        // img {
-        //     width: 100%;
-        // }
-    } 
-    //Carousel字体排版
+        @media (min-width: 768px) {
+            max-height: 36rem;
+        } //手机设备取消轮转图的缩放
+        @media (max-width:768px) {
+            >.item>img,
+            >.item>a>img {
+                max-width: none;
+            }
+        } //End 手机设备取消轮转图的缩放
+    } //Carousel字体排版
     .carousel-caption {
+        top: .2rem;
+        padding-top: 0;
+        @media (min-width: 768px) {
+            width: 30%;
+            left: 10%;
+            right: 10%;
+        }
+        @media (max-width: 768px) {}
         h1 {
-            font-family: Regular;
-            font-size: .4rem;
+            font-family: Regular; // font-size: .4rem;
+            font-size: 250%;
             text-align: left;
+            margin-top: 0.2rem;
+            margin-bottom: .3rem;
         }
         p {
-            a {}
+            font-family: Light;
+            text-align: left; // line-height: 200%;
+            letter-spacing: .01rem;
+            a {
+                color: #fff;
+            }
         }
-    } 
-    //End Carousel字体排版
+    } //End Carousel字体排版
 }

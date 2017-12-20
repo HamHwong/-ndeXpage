@@ -113,12 +113,13 @@ End Flex
   background-color: #e9e9e9;
 }
 .bluebgc {
-  color: #fff;
+  color: #fcfcfc;
   background-color: #1995fa;
 }
 .row {
   margin-left: 0px;
   margin-right: 0px;
+  padding: .2rem 0;
 }
 .grayimgbg {
   filter: grayscale(100%);
@@ -197,6 +198,12 @@ r - rem
 }
 .mt23p {
   margin: 0.23rem 0 0 0;
+}
+.mt10p {
+  margin: 0.1rem 0 0 0;
+}
+.mt20p {
+  margin: 0.2rem 0 0 0;
 }
 .row60 {
   min-height: .6rem;

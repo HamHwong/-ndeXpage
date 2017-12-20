@@ -1,7 +1,3 @@
-.bigTopic,
-.topic {
-  padding: .2rem 0;
-}
 .bigTopic .content span,
 .topic .content span {
   text-align: left;
@@ -29,16 +25,27 @@
 }
 .bizDetail .bizContent .bizInfo {
   word-break: break-all;
+  margin-top: .4rem;
 }
 .bizDetail .bizContent .bizInfo span {
   text-align: justify;
   letter-spacing: .01rem;
+}
+@media (max-width: 768px) {
+  .bizDetail .bizContent .bizInfo {
+    margin-top: .2rem;
+  }
 }
 .bizDetail .bizContent .bizLink {
   position: relative;
   bottom: 0;
   font-size: .16rem;
   margin-top: .4rem;
+}
+@media (max-width: 768px) {
+  .bizDetail .bizContent .bizLink {
+    margin-top: .2rem;
+  }
 }
 .bizDetail:last-child .container:last-child {
   border-bottom: none;
@@ -49,28 +56,6 @@
 }
 .businessIntro > span {
   text-indent: 2rem;
-}
-
-.cycle_container {
-  cursor: pointer;
-}
-.cycle {
-  width: 2.4rem;
-  height: 2.4rem;
-  border-radius: 50%;
-  margin: .2rem auto;
-  background-color: #fdfdfd;
-  text-align: center;
-  overflow: hidden;
-  box-shadow: 0 0 .3rem 0 #dcdcdc;
-}
-.cycle_title {
-  font-family: Bold;
-  position: relative;
-  top: .2rem;
-  letter-spacing: -0.01rem;
-  color: #1681d8;
-  font-size: 1.4em;
 }
 
 @charset "UTF-8";
@@ -188,7 +173,7 @@ End Flex
   background-color: #e9e9e9;
 }
 .bluebgc {
-  color: #fff;
+  color: #fcfcfc;
   background-color: #1995fa;
 }
 .row {
@@ -272,6 +257,12 @@ r - rem
 }
 .mt23p {
   margin: 0.23rem 0 0 0;
+}
+.mt10p {
+  margin: 0.1rem 0 0 0;
+}
+.mt20p {
+  margin: 0.2rem 0 0 0;
 }
 .row60 {
   min-height: .6rem;
@@ -303,22 +294,107 @@ r - rem
     margin: 1rem 0 0 0;
   }
 }
+.carousel_es .carousel-indicators li {
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+}
+.carousel_es .carousel-indicators .active {
+  width: 10px;
+  height: 10px;
+}
+.carousel_es .carousel-control {
+  color: #fff;
+}
 .carousel_es .carousel-inner {
   max-height: 8rem;
   overflow: hidden;
+}
+.carousel_es .carousel-inner .vignetting {
+  height: 100%;
 }
 @media (min-width: 768px) {
   .carousel_es .carousel-inner {
     max-height: 36rem;
   }
 }
-.carousel_es .carousel-inner .vignetting {
-  height: 100%;
+@media (max-width: 768px) {
+  .carousel_es .carousel-inner > .item > img,
+  .carousel_es .carousel-inner > .item > a > img {
+    max-width: none;
+  }
+}
+.carousel_es .carousel-caption {
+  top: .2rem;
+  padding-top: 0;
+}
+@media (min-width: 768px) {
+  .carousel_es .carousel-caption {
+    width: 30%;
+    left: 10%;
+    right: 10%;
+  }
 }
 .carousel_es .carousel-caption h1 {
   font-family: Regular;
-  font-size: .4rem;
+  font-size: 250%;
   text-align: left;
+  margin-top: 0.2rem;
+  margin-bottom: .3rem;
+}
+.carousel_es .carousel-caption p {
+  font-family: Light;
+  text-align: left;
+  letter-spacing: .01rem;
+}
+.carousel_es .carousel-caption p a {
+  color: #fff;
+}
+
+.cycle_container {
+  cursor: pointer;
+}
+.cycle {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  margin: .2rem auto;
+  background-color: #fdfdfd;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 .3rem 0 #dcdcdc;
+}
+.cycle img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 12%;
+  margin-bottom: 3%;
+  width: 40%;
+  height: 40%;
+}
+.cycle_title {
+  display: block;
+  font-family: Bold;
+  top: .2rem;
+  letter-spacing: -0.01rem;
+  color: #1681d8;
+  font-size: 1.4em;
+}
+.cycle_intro {
+  margin: 0 auto;
+  display: block;
+  max-width: 70%;
+}
+
+
+.imagebar1 {
+  background-image: url('../static/images/p.jpg');
+}
+.imagebar1 .vignetting {
+  height: 2.4rem;
+}
+.imagebar1 .container span {
+  font-size: 80%;
 }
 
 @charset "UTF-8";
@@ -436,7 +512,7 @@ End Flex
   background-color: #e9e9e9;
 }
 .bluebgc {
-  color: #fff;
+  color: #fcfcfc;
   background-color: #1995fa;
 }
 .row {
@@ -520,6 +596,12 @@ r - rem
 }
 .mt23p {
   margin: 0.23rem 0 0 0;
+}
+.mt10p {
+  margin: 0.1rem 0 0 0;
+}
+.mt20p {
+  margin: 0.2rem 0 0 0;
 }
 .row60 {
   min-height: .6rem;
@@ -576,11 +658,12 @@ li:focus {
   background-color: transparent !important;
 }
 .navbar-nav > li > a {
+  font-family: ExtraLight;
   font-size: 14px;
 }
 @media (min-width: 768px) {
   .navbar-nav > li > a {
-    padding: 0 0.145rem;
+    padding: 0 0.145rem 0.1rem 0.145rem;
   }
 }
 @media (min-width: 768px) {
@@ -613,18 +696,19 @@ End Bootstrap自定义
 }
 .navbar-elitesource .navbar-toggle {
   border-color: #333;
+  margin-top: 0;
 }
 .navbar-elitesource .navbar-toggle .icon-bar {
   background-color: #fff;
 }
-
-.imagebar1 {
-  background-image: url('../static/images/p.jpg');
+@media (max-width: 768px) {
+  .navbar-elitesource .navbar-header {
+    padding-bottom: 10px;
+  }
 }
-.imagebar1 .vignetting {
-  height: 2.4rem;
-}
-.imagebar1 .container span {
-  font-size: 80%;
+@media (min-width: 768px) {
+  .navbar-elitesource .nav {
+    margin: 0.1rem 0 0 0;
+  }
 }
 

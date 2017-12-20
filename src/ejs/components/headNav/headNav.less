@@ -33,7 +33,7 @@ a:hover,
 li:hover,
 a:active,
 li:active,
-a:focus ,
+a:focus,
 li:focus {
     background-color: transparent !important;
 } //取消nav上link的背景色
@@ -48,9 +48,11 @@ li:focus {
 // } //取消nav上link的背景色
 @header-link-margin-right: .29rem;
 .navbar-nav>li>a {
+    font-family: ExtraLight;
     font-size: 14px;
+
     @media (min-width: 768px) {
-        .func-padding(0, @header-link-margin-right/2)
+        .func-padding(0, @header-link-margin-right/2 , .1rem, @header-link-margin-right/2)
     }
 }
 
@@ -87,8 +89,19 @@ End Bootstrap自定义
     .darkbgc;
     .navbar-toggle {
         border-color: #333;
+        margin-top: 0;
         .icon-bar {
             background-color: #fff;
+        }
+    }
+    .navbar-header {
+        @media (max-width: 768px) {
+            padding-bottom: 10px;
+        }
+    }
+    .nav {
+        @media (min-width: 768px) {
+            .mt10p
         }
     }
 }

@@ -37,26 +37,30 @@
                     <!-- 業務導航 -->
                     <div class="cycle_container col-xs-12 col-sm-6 col-md-3" onclick="javascript:location.href='#'">
                         <div class="cycle">
-                            <img src="" alt="">
-                            <span class="cycle_title">TITLETITLETIE</span>
+                            <img src="/static/images/svg/analytics.svg" alt="">
+                            <span class="cycle_title">Analytics</span>
+                            <span class="cycle_intro">This is a Analytics Icon </span>
                         </div>
                     </div>
                     <div class="cycle_container col-xs-12 col-sm-6 col-md-3" onclick="javascript:location.href='#'">
                         <div class="cycle">
-                            <img src="" alt="">
-                            <span class="cycle_title">TITLE</span>
+                            <img src="/static/images/svg/coding.svg" alt="">
+                            <span class="cycle_title">Coding</span>
+                            <span class="cycle_intro">This is a Coding Icon</span>
                         </div>
                     </div>
                     <div class="cycle_container col-xs-12 col-sm-6 col-md-3" onclick="javascript:location.href='#'">
                         <div class="cycle">
-                            <img src="" alt="">
-                            <span class="cycle_title">TITLE</span>
+                            <img src="/static/images/svg/cloud-computing.svg" alt="">
+                            <span class="cycle_title">Cloud</span>
+                            <span class="cycle_intro">This is a Cloud Icon</span>
                         </div>
                     </div>
                     <div class="cycle_container col-xs-12 col-sm-6 col-md-3" onclick="javascript:location.href='#'">
                         <div class="cycle">
-                            <img src="" alt="">
-                            <span class="cycle_title">TITLE</span>
+                            <img src="/static/images/svg/deal.svg" alt="">
+                            <span class="cycle_title">Deal</span>
+                            <span class="cycle_intro">This is a Deal Icon</span>
                         </div>
                     </div>
                     <!--End 業務導航 -->
@@ -83,7 +87,7 @@
             </div>
             <!-- End bigTopic -->
             <!-- smallTopic -->
-            <div class="row row240 graybgc">
+            <div class="row row240 whitebgc">
                 <div class="container">
                     <div class="col-md-6 col-sm-6">
                         <%-include(path.src.components+'/smallTopic/smallTopic') %>
@@ -93,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row row240 graybgc">
+            <div class="row row240 whitebgc">
                 <div class="container">
                     <div class="col-md-6 col-sm-6">
                         <%-include(path.src.components+'/smallTopic/smallTopic') %>
@@ -105,7 +109,7 @@
             </div>
             <!-- End smallTopic -->
             <!-- footer -->
-            <footer>asa</footer>
+            <%-include(path.src.components+'/footer/footer') %>
             <!-- End footer -->
 
 </body>
@@ -113,5 +117,19 @@
 <link rel="stylesheet" href="/css/components.css">
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- 實現輪轉圖手勢 -->
+<script src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+<script src="/js/jquery.hammer.js" defer></script>
+<script>
+    window.onload = function () {
+        $('#carousel').hammer().on('swipeleft', function () {
+            $(this).carousel('next');
+        });
+        $('#carousel').hammer().on('swiperight', function () {
+            $(this).carousel('prev');
+        });
+    }
+</script>
+<!-- End 實現輪轉圖手勢 -->
 
 </html>
