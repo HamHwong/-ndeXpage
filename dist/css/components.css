@@ -1,9 +1,12 @@
-
-.businessIntro {
-  text-align: justify;
+.bigTopic,
+.topic {
+  padding: .2rem 0;
 }
-.businessIntro > span {
-  text-indent: 2rem;
+.bigTopic .content span,
+.topic .content span {
+  text-align: left;
+  font-size: 1.5em;
+  line-height: 2em;
 }
 
 @media (max-width: 768px) {
@@ -39,6 +42,35 @@
 }
 .bizDetail:last-child .container:last-child {
   border-bottom: none;
+}
+
+.businessIntro {
+  text-align: justify;
+}
+.businessIntro > span {
+  text-indent: 2rem;
+}
+
+.cycle_container {
+  cursor: pointer;
+}
+.cycle {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  margin: .2rem auto;
+  background-color: #fdfdfd;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 .3rem 0 #dcdcdc;
+}
+.cycle_title {
+  font-family: Bold;
+  position: relative;
+  top: .2rem;
+  letter-spacing: -0.01rem;
+  color: #1681d8;
+  font-size: 1.4em;
 }
 
 @charset "UTF-8";
@@ -287,35 +319,6 @@ r - rem
   font-family: Regular;
   font-size: .4rem;
   text-align: left;
-}
-
-.cycle_container {
-  cursor: pointer;
-}
-.cycle {
-  width: 2.4rem;
-  height: 2.4rem;
-  border-radius: 50%;
-  margin: .2rem auto;
-  background-color: #fdfdfd;
-  text-align: center;
-  overflow: hidden;
-  box-shadow: 0 0 .3rem 0 #dcdcdc;
-}
-.cycle_title {
-  font-family: Bold;
-  position: relative;
-  top: .2rem;
-  letter-spacing: -0.01rem;
-  color: #1681d8;
-  font-size: 1.4em;
-}
-
-.imagebar1 {
-  background-image: url('../static/images/p.jpg');
-}
-.imagebar1 .vignetting {
-  height: 2.4rem;
 }
 
 @charset "UTF-8";
@@ -614,3 +617,14 @@ End Bootstrap自定义
 .navbar-elitesource .navbar-toggle .icon-bar {
   background-color: #fff;
 }
+
+.imagebar1 {
+  background-image: url('../static/images/p.jpg');
+}
+.imagebar1 .vignetting {
+  height: 2.4rem;
+}
+.imagebar1 .container span {
+  font-size: 80%;
+}
+

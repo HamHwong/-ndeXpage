@@ -12,7 +12,7 @@
 <body>
     <!-- Header -->
     <%-include(path.src.components+'/headNav/headNav') %>
-    <!-- End Header -->
+        <!-- End Header -->
 
         <!-- Carousel -->
         <%-include(path.src.components+'/carousel/carousel') %>
@@ -77,11 +77,37 @@
                 <%-include(path.src.components+'/businessDetail/businessDetail') %>
             </div>
             <!-- End Business Detail -->
-            <!-- Bar -->
-            <div class="row480 bluebgc">
-                    <%-include(path.src.components+'/bigTopic/bigTopic') %>
+            <!-- bigTopic -->
+            <div class="row row480 bluebgc">
+                <%-include(path.src.components+'/bigTopic/bigTopic') %>
             </div>
-            <!-- End Bar -->
+            <!-- End bigTopic -->
+            <!-- smallTopic -->
+            <div class="row row240 graybgc">
+                <div class="container">
+                    <div class="col-md-6 col-sm-6">
+                        <%-include(path.src.components+'/smallTopic/smallTopic') %>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <%-include(path.src.components+'/smallTopic/smallTopic') %>
+                    </div>
+                </div>
+            </div>
+            <div class="row row240 graybgc">
+                <div class="container">
+                    <div class="col-md-6 col-sm-6">
+                        <%-include(path.src.components+'/smallTopic/smallTopic') %>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <%-include(path.src.components+'/smallTopic/smallTopic') %>
+                    </div>
+                </div>
+            </div>
+            <!-- End smallTopic -->
+            <!-- footer -->
+            <footer>asa</footer>
+            <!-- End footer -->
+
 </body>
 <link rel="stylesheet" href="/css/regular.css">
 <link rel="stylesheet" href="/css/components.css">
